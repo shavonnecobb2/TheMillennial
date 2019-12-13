@@ -1,1 +1,264 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.header-bar {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  font-size: 80px;
+  background-color: #AEB6BF;
+  color: #EBEDEF;
+  padding: 40px;
+  font-family: 'Unica One', cursive;
+  letter-spacing: 3px;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+.topbar {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #2E4053;
+}
+
+/* Dropdown Button */
+.topbar-icon {
+  background-color: #2E4053;
+  color: #EBEDEF;
+  padding: 15px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #AEB6BF;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #EBEDEF;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #1C2833;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #1C2833;
+}
+
+.search-bar {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  justify-content: center;
+}
+
+.search-input-field {
+  width: 30%;
+  height: 50px;
+  margin-right: 10px;
+}
+
+input, textarea {
+  border: none;
+  caret-color: #1B2631;
+  padding: 10px;
+  font-size: 30px;
+  color: #2E4053;
+  text-shadow: 0px 0px 0px #000;
+  display: block;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #AEB6BF;
+  text-shadow: none;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.fb-secondary {
+  margin-right: 10px;
+}
+
+.search-filter-btn {
+  background-color: white;
+  color: #2E4053;
+  padding: 16px;
+  border: none;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  margin: 20px;
+  line-height: 1.6;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, .05);
+}
+
+.product-card img {
+  width: 200px;
+  height: 250px;
+  opacity: .8;
+}
+
+.picture-text {
+  text-align: center;
+  color: black;
+}
+
+h3 {
+  color: #2E4053;
+  font-size: 22px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+p {
+  color: #1B2631;
+  font-size: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.load-button {
+  width: 13%;
+  background-color: #AEB6BF;
+  padding: 10px;
+  font-size: 12px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 120px;
+  background-color: #1B2631;
+  ;
+  flex-shrink: 0;
+}
+
+#footer-icon {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 40px;
+  color: #EBEDEF;
+  padding: 10px;
+}
+
+@media all and (min-width: 768px) {
+  header {
+    font-size: 125px;
+  }
+
+  .product-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  .far, .fas, .fab {
+    font-size: 30px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #AEB6BF;
+    min-width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .filter-bar {
+    margin-top: 40px;
+  }
+
+  #icon {
+    font-size: 40px;
+    color: #EBEDEF;
+  }
+
+  footer {
+    margin-top: 170px;
+  }
+}
